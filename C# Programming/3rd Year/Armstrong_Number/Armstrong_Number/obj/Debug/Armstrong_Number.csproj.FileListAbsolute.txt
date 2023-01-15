@@ -1,8 +1,0 @@
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\bin\Debug\Armstrong_Number.exe.config
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\bin\Debug\Armstrong_Number.exe
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\bin\Debug\Armstrong_Number.pdb
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\obj\Debug\Armstrong_Number.csproj.AssemblyReference.cache
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\obj\Debug\Armstrong_Number.csproj.SuggestedBindingRedirects.cache
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\obj\Debug\Armstrong_Number.csproj.CoreCompileInputs.cache
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\obj\Debug\Armstrong_Number.exe
-C:\Users\Xenoxia\OneDrive - Polytechnic University of the Philippines\Programming Projects\VS\Armstrong_Number\Armstrong_Number\obj\Debug\Armstrong_Number.pdb
