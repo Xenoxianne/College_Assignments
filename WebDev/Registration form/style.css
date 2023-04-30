@@ -1,0 +1,14 @@
+body {
+    background-color: #ffc8dd;
+}
+
+.contents {
+    display: grid;
+}
+
+.left-box {
+    background-color: white;
+    place-self: center;
+    height: 500px;
+    width: 700px;
+}
