@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    background: rgb(128,0,0);
+    background: linear-gradient(180deg, rgba(128,0,0,0.5131302521008403) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 100%);
+    overflow: hidden;
+    padding: 20px 20px 20px 50px;
+}
+
+.Column{
+    float: left;
+}
+
+.Logo img {
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.Title {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.School:hover {
+    text-decoration: underline;
+}
+
+.School {
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+    color: #800;
+}
+
+.Slogan{
+    font-family: Cinzel, serif;
+    font-size: smaller;
+    color: #555 
+}
+
+/* Main */
+
+main {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.lyrics-container {
+    height: 350px;
+    max-width: 80%;
+    margin-top: 25px;;
+    margin-left: 10%;
+    overflow: scroll;
+    position: relative;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 0.8;
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+
+.lyrics-container::-webkit-scrollbar {
+    display: none;
+}
+
+.audio-player {
+    margin-top: 40px;
+}
+
+.lyric {
+    opacity: 0.6;
+    font-size: 15px;
+    color: gray;
+}
+
+.lyric.highlight {
+    opacity: 1;
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    transition: 0.5s;
+}
+
+.lyric.past-highlight {
+    opacity: 0.5;
+    font-size: 15px;
+    color: rgb(114, 6, 6);
+    transition: 0.5s;
+}
+
+.lyric:hover, .lyric.past-highlight:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+footer p{
+    line-height: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 9pt;
+    font-weight: 300;
+    color: gray;
+}
+
+.SocMed{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.SocMed a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.SocMed a:hover{
+    color:#fff;
+}
+
+.SocMed a i{
+    font-size: 20pt;
+    margin-left: 20px;
+}
+    
