@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* --- Header --- */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(header2.png) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.greet{
+    color: white;
+    margin-top: 40vh;
+    margin-left: 10%;
+    line-height: 60px;
+}
+
+.greet h3{
+    font-size: 30px;
+}
+
+/* --- NavBar --- */
+
+.logo {
+    position: fixed;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo p {
+    float: left;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: white;
+    padding: 0 ;
+    text-align : right;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background : #1a2028
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+nav li:last-child{
+    margin-right: 35px;
+}
+
+nav a:hover{
+    color: rgb(242, 0, 137, 1);
+}
+
+nav .active:hover{
+    color: white;
+}
+    
+nav .active {
+    background-color: rgb(242, 0, 137, 1);
+    color: white;
+    padding: 10px;
+    transition: 1s;
+}
+
+/* --- Introduction --- */
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #282b38;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.Intro {
+    display: flex;
+    width: 100%;
+    margin: 80px;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.up, .down {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.left img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.down a img {
+    max-height: 45px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.down a img:hover {
+    max-height: 50px;
+    transition: 0.5s;
+}
+
+/* --- Hobbies 282b38--- */
+
+.hobbies {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1a2028;
+    display: flex;
+    color: white;
+}
+
+.hob-content {
+    width: 100%;
+    margin: 90px 80px 80px 80px;
+}
+
+.hob-top, .hob-bottom {
+    padding: 20px;
+    margin: 5px;
+}
+
+.hob-top {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hob-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.hob-bottom div {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+    text-align: center;
+    background-color: #282b38;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.hob-bottom div img {
+    margin: 20px;
+    max-height: 90px;
+}
+
+.hob-bottom div p {
+    padding: 30px 15px 15px 15px;
+    font-size: 14px;
+    color: rgb(167, 162, 162);
+}
+
+.hob-bottom div:hover {
+    border: 2px solid #F20089;
+}
+
+/* --- Contacts --- */
+
+.contacts {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #282b38;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-content {
+    width: 100%;
+    margin: 80px;
+}
+
+.cont-top, .cont-bot {
+    padding: 20px;
+    margin: 5px;
+}
+
+.cont-top {
+    text-align: center;
+}
+
+.cont-mid {
+    margin: 10px;
+}
+
+.cont-mid {
+    margin: 30px 0px 40px 40px;
+    color: gray;
+    text-align: center;
+}
+
+.cont-mid a {
+    text-decoration: none;
+    color: rgb(182, 174, 174);
+    transition: 0.5s;
+}
+
+.cont-mid a:hover {
+    color:#fff;
+}
+
+.cont-mid a i {
+    font-size: 30pt;
+    margin-right: 40px;
+}
+
+.cont-bot {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.cont-bot div {
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+    text-align: center;
+    background-color: #1a2028;
+    border-radius: 10px;
+    justify-content: center;
+    line-height: 10px;
+}
+
+.cont-bot div p {
+    padding: 30px 15px 15px 15px;
+    font-size: 15px;
+    color: rgb(167, 162, 162);
+}
+
+.cont-bot div:hover, .cont-bot div:hover p  {
+    background-color: #f20089;
+    color: white;
+}
+ 
+/* --- Footer --- */
+
+footer {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 30px;
+    background-color: #1a2028;
+    color: white;
+}
+
+/* --- Animation --- */
+
+.reveal {
+    transform: translateY(150px);
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
