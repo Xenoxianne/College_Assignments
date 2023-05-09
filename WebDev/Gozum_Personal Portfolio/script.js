@@ -21,7 +21,7 @@ window.addEventListener("scroll", function() {
     newLink.classList.add("active");
   });
 
-// For Transition of content
+// For Animation of content
 
 window.addEventListener("scroll", reveal);
 
