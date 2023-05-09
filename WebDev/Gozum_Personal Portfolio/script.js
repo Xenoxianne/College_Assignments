@@ -1,3 +1,5 @@
+// For Nav Bar
+
 window.addEventListener("scroll", function() {
     var nav = document.querySelector("nav");
     var sections = document.querySelectorAll("article");
@@ -18,6 +20,8 @@ window.addEventListener("scroll", function() {
     var newLink = document.querySelector('a[href="#' + currentSection + '"]');
     newLink.classList.add("active");
   });
+
+// For Transition of content
 
 window.addEventListener("scroll", reveal);
 
