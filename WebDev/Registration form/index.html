@@ -3,28 +3,254 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Employee Registration Form</title>
         <link href="style.css" rel="stylesheet"/>
     </head>
 
     <body>
-        <div class = "contents">
+        <form action = "#" class = "contents">
+
+            <!-- left -->
             <div class = "left-box">
                 <header>
-
+                    <h1>aerith.</h1>
+                    <h2>REGISTRATION</h2>
+                    <p>Join our team today! Fill out our employee registration form and become a part of our growing community.</p>
                 </header>
-    
-                <main>
-    
-                    <script src="script.js"></script>
-                </main>
-                    
-                <footer>
-                    <p>Designed By: Denise Julianne Gozum</p>
-                    <p>Copyright © 2023 Polytechnic University of the Philippines</p>
-                </footer>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+
+                    <div class = "progress-step progress-step-active" data-title = "Personal information"></div>
+                    <div class = "progress-step" data-title = "Permanent Address"></div>
+                    <div class = "progress-step" data-title = "Work-Related information"></div>
+                    <div class = "progress-step" data-title = "Additional information #1"></div>
+                    <div class = "progress-step" data-title = "Additional information #2"></div>
+                </div>  
             </div>
-        </div>
+
+            <!-- right -->
+            <div class="right-box">
+
+                <!-- Personal Info -->
+                <div class="form-step form-step-active">
+                    <div class="intro">
+                        <h1>Your Personal Information</h1>
+                        <p>Help us get to know you better by providing your personal details. Your information will be kept confidential and used solely for the purpose of this registration.</p>
+                        <i><p> Note: Input n/a if not applicable </p></i>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" name="" id="first-name" required>
+                        <label class="label first">First Name</label>
+                        <input type="text" name="" id="last-name" required>
+                        <label class="label">Last Name</label>
+                        <input type="text" name="" id="middle-name" required>
+                        <label class="label first">Middle Name</label>
+                        <input type="text" name="" id="suffix" required>
+                        <label class="label">Suffix</label>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" name="" id="gender" required>
+                        <label class="label first">Gender</label>
+                        <input type="date" name="" id="birthday" required>
+                        <label class="bday label">Date of Birth</label>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" name="" id="number" required>
+                        <label class="label first">Phone Number</label>
+                        <input type="text" name="" id="email" required>
+                        <label class="label">E-mail Address</label>
+                    </div>
+                
+                    <div>
+                        <input type="reset" class="btn btn-clear" value="Clear">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn btn-next" value="Next">
+                    </div>
+                </div>
+
+                <!-- Home Address -->
+                <div class="form-step">
+                    <div class="intro">
+                        <h1>Your Home Address</h1>
+                        <p>Please provide your current residential address for communication and correspondence purposes.</p>
+                        <i><p> Note: Input n/a if not applicable </p></i>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type = "text" name = "" id = "address" required> <label class = "label first">Unit no/House no</label>
+                        <input type = "text" name = "" id = "street" required> <label class = "label">Street</label>
+                        <input type = "text" name = "" id = "subd" required> <label class = "label first">Village/Subdivision</label>
+                        <select id="region" required>
+                            <option value="" disabled selected>Select Region</option>
+                        </select>
+                        <select id="province" required>
+                            <option value="" disabled selected>Select Province</option>
+                        </select>
+                        <select id="municipality" required>
+                            <option value="" disabled selected>Select Municipality</option>
+                        </select>
+                        <select id="barangay" required>
+                            <option value="" disabled selected>Select Barangay</option>
+                        </select>
+                        <input type = "text" name = "" id = "zip" required> <label class = "label">Zip Code</label>
+                    </div>
+
+                    <div>
+                        <input type="reset" class="btn btn-clear" value="Clear">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn btn-next" value="Next">
+                        <input type="button" class="btn btn-prev" value="Previous">
+                    </div>
+                </div>
+
+                <!-- Work-Related Info -->
+                <div class="form-step">
+                    <div class="intro">
+                        <h1>Your Work-Related Information</h1>
+                        <p>Provide your work-related details to help us understand your professional background.</p>
+                    </div>
+                
+                    <div style="float: left; margin-right: 20px;">
+                        <div class="input-group">
+                            <div>
+                                <input type = "text" name = "" id = "position" required> <label class = "label">Applying Position</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <p class = "radio-grp">Type of Work</p>
+                            <div class = "radio-adjust"><input type="radio" name = "work" id = "permanent" value="permanent" required> <label class = "radio-lbl" for="permanent">Permanent</label><br></div>
+                            <div class = "radio-adjust"><input type="radio" name = "work" id = "temporary" value="temporary"> <label class = "radio-lbl" for="temporary">Temporary</label><br></div>
+                            <div class = "radio-adjust"><input type="radio" name = "work" id = "both" value="both"> <label class = "radio-lbl" for="both">Both</label><br></div>
+                            <div class = "radio-adjust"><input type="radio" name = "work" id = "other" value="other"> <label class = "radio-lbl" for="other">Other</label></div>
+                        </div>
+
+                        <div class="input-group">
+                            <fieldset>
+                                <div style = "margin-top: -15px;"><input type="file" id="resume" name="resume" accept="image/*, .pdf, .doc" required/></div>
+                                <legend>Upload Resume</legend>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <p class = "radio-grp" style="margin: 10px;">Cover Letter</p>
+                        <textarea id="cover_letter" name="cover_letter"></textarea>
+                    </div>
+                    
+                    <div style="clear: both;">
+                        <input type="reset" style = "margin-top: -1px;" class="btn btn-clear" value="Clear">
+                    </div>
+
+                    <div>
+                        <input type="button" style = "margin-top: -1px;" class="btn btn-next" value="Next">
+                        <input type="button" style = "margin-top: -1px;" class="btn btn-prev" value="Previous">
+                    </div>
+                </div>
+
+                <!-- Add Info 1 -->
+                <div class="form-step">
+                    <div class="intro">
+                        <h1>Additional Information # 1</h1>
+                    </div>
+                        
+                    <div class="input-group" style="float: left; margin-right: 20px;">
+                    <p class = "radio-grp">Race</p>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "american" value="american" required> <label class = "radio-lbl">American Native or Alaska Native</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "asian" value="asian"> <label class = "radio-lbl">Asian</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "black" value="black"> <label class = "radio-lbl">Black or African American</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "hawaiian" value="hawaiian"> <label class = "radio-lbl">Native Hawaiian or Other Pacific Islander</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "white" value="white"> <label class = "radio-lbl">White</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "two" value="two"> <label class = "radio-lbl">Two or more races</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "decline" value="decline"> <label class = "radio-lbl">Decline to specify</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "other" value="other"> <label class = "radio-lbl">Other</label></div>
+                    </div>
+
+                    <div class="input-group">
+                        <p class = "radio-grp">Veteran Status</p>
+                        <div class = "radio-adjust"><input type="radio" name = "veteran" id = "veteran" value="veteran" required> <label class = "radio-lbl">I am a veteran</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "veteran" id = "disabled" value="disabled"> <label class = "radio-lbl">I am a special disabled veteran</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "veteran" id = "separated" value="separated"> <label class = "radio-lbl">I am a recently separated veteran</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "veteran" id = "other" value="other"> <label class = "radio-lbl">I am an other protected veteran</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "veteran" id = "not" value="not"> <label class = "radio-lbl">I am not a veteran</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "veteran" id = "decline" value="decline"> <label class = "radio-lbl">Prefer Not The Answer</label></div>
+                    </div>
+                        
+                    
+                    <div style="clear: both;">
+                        <input type="reset" class="btn btn-clear" value="Clear">
+                    </div>
+
+                    <div>
+                        <input type="button" class="btn btn-next" value="Next">
+                        <input type="button" class="btn btn-prev" value="Previous">
+                    </div>
+                </div>
+
+                <!-- Add Info 2 -->
+                <div class="form-step">
+                    <div class="intro" style = "margin-bottom: 15px;">
+                        <h1>Additional Information # 2</h1>
+                    </div>
+                        
+                    <div class="input-group">
+                    <p class = "radio-grp">Disabilities</p>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "american" required> <label class = "radio-sm">No disability</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "asian"> <label class = "radio-sm">Two or more impairments and/or disabling medical conditions.</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "black"> <label class = "radio-sm">A Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D)</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "hawaiian"> <label class = "radio-sm">A social/communication impairment (Asperger's syndrome/autistic spectrum)</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "white"> <label class = "radio-sm">A long standing illness or health condition (cancer, HIV, diabetes, heart disease)</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "two"> <label class = "radio-sm">A physical impairment or mobility issues (using a wheelchair or crutches)</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "decline"> <label class = "radio-sm">Deaf or a serious hearing impairment</label<br>></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "other"> <label class = "radio-sm">Blind or a serious visual impairment uncorrected by glasses</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "other"> <label class = "radio-sm">Prefer not to say</label><br></div>
+                        <div class = "radio-adjust"><input type="radio" name = "race" id = "other"> <label class = "radio-sm">A disability, impairment or medical condition not listed here</label></div>
+                    </div>
+                        
+                    <div>
+                        <input type="reset" style = "margin-top: 2px;" class="btn btn-clear" value="Clear">
+                    </div>
+
+                    <div>
+                        <input type="button" style = "margin-top: 2px;" class="btn btn-next" value="Next">
+                        <input type="button" style = "margin-top: 2px;" class="btn btn-prev" value="Previous">
+                    </div>
+                </div>
+
+                <!-- Done -->
+                <div class="form-step">
+                    <div class="end">
+                        <h1> Thank You for Completing the Employee Registration Form!</h1>
+                        <p> Thank you for showing interest in our company and taking the time to complete the employee registration form. We appreciate your effort and the valuable information you have provided. Your application is now under review, and we will get back to you soon regarding the next steps of the process.
+
+                            <br/><br/>If you have any further questions or require additional information, please feel free to reach out to us. We look forward to the possibility of welcoming you to our team.</p>
+                    </div>
+                        
+                    <div style="margin-top: 15vh;">
+                        <input type="submit" style = "margin-top: 2px;" class="btn btn-submit" value="Submit" onclick="success()">
+                        <input type="button" style = "margin-top: 2px;" class="btn btn-prev" value="Previous">
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+        <script src = "script.js"></script>
+        <script src="./scripts/region.js"></script>
+        <script src="./scripts/province.js"></script>
+        <script src="./scripts/municipality.js"></script>
+        <script src="./scripts/barangay.js"></script>
     </body>
 </html>
