@@ -1,52 +1,3 @@
-// const prevBtns = document.querySelectorAll(".btn-prev");
-// const nextBtns = document.querySelectorAll(".btn-next");
-// const progress = document.getElementById("progress");
-// const formSteps = document.querySelectorAll(".form-step");
-// const progressSteps = document.querySelectorAll(".progress-step");
-
-// let formStepsNum = 0;
-
-// nextBtns.forEach((btn) => {
-//     btn.addEventListener("click", () => {
-//         formStepsNum++;
-//         updateFormSteps();
-//         updateProgressbar();
-//     })
-// })
-
-// prevBtns.forEach(btn => {
-//     btn.addEventListener("click", () => {
-//         formStepsNum--;
-//         updateFormSteps();
-//         updateProgressbar();
-//     })
-// })
-
-// function updateFormSteps(){
-
-//     formSteps.forEach((formStep) => {
-//         formStep.classList.contains("form-steps-active") ==
-//         formStep.classList.remove("form-step-active");
-//     })
-
-//     formSteps[formStepsNum].classList.add("form-step-active");
-// }
-
-// function updateProgressbar(){
-//     progressSteps.forEach((progressStep, index) => {
-//         if(index < formStepsNum + 1){
-//             progressStep.classList.add("progress-step-active");
-//         } else {
-//             progressStep.classList.remove("progress-step-active");
-//         }
-//     });
-
-//     const progressActive = document.querySelectorAll(".progress-step-active");
-
-//     progress.style.height = ((progressActive.length - 1) / (progressSteps.length - 1) * 100 + "%");
-
-// }
-
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
 const progress = document.getElementById("progress");
@@ -56,7 +7,6 @@ const progressSteps = document.querySelectorAll(".progress-step");
 let formStepsNum = 0;
 
 // Form
-
 nextBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (validateForm()) {
@@ -84,7 +34,6 @@ function updateFormSteps() {
 }
 
 // Update Progress bar
-
 function updateProgressbar() {
   progressSteps.forEach((progressStep, index) => {
     if (index < formStepsNum + 1) {
@@ -126,14 +75,12 @@ function validateForm() {
 }
 
 //Once form is submitted
-
 function success(){
     alert("Form Successfully Submitted");
 }
 
 
 // For selecting address
-
 document.addEventListener('DOMContentLoaded', () => {
     const regionSelect = document.getElementById('region');
     const provinceSelect = document.getElementById('province');
@@ -159,27 +106,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   
-    populateSelect(regionSelect, regionData, 'region_id', 'region_name', 'Select Region');
-  
-    regionSelect.addEventListener('change', (event) => {
-      const selectedRegion = event.target.value;
-      const provinces = provinceData.filter(province => province.region_id === parseInt(selectedRegion));
-      populateSelect(provinceSelect, provinces, 'province_id', 'province_name', 'Select Province');
-      populateSelect(municipalitySelect, [], 'municipality_id', 'municipality_name', 'Select Municipality');
-      populateSelect(barangaySelect, [], 'barangay_id', 'barangay_name', 'Select Barangay');
-    });
-  
-    provinceSelect.addEventListener('change', (event) => {
-      const selectedProvince = event.target.value;
-      const municipalities = municipalityData.filter(municipality => municipality.province_id === parseInt(selectedProvince));
-      populateSelect(municipalitySelect, municipalities, 'municipality_id', 'municipality_name', 'Select Municipality');
-      populateSelect(barangaySelect, [], 'barangay_id', 'barangay_name', 'Select Barangay');
-    });
-  
-    municipalitySelect.addEventListener('change', (event) => {
-      const selectedMunicipality = event.target.value;
-      const barangays = barangayData.filter(barangay => barangay.municipality_id === parseInt(selectedMunicipality));
-      populateSelect(barangaySelect, barangays, 'barangay_id', 'barangay_name', 'Select Barangay');
-    });
+  populateSelect(regionSelect, regionData, 'region_id', 'region_name', 'Select Region');
+
+  regionSelect.addEventListener('change', (event) => {
+    const selectedRegion = event.target.value;
+    const provinces = provinceData.filter(province => province.region_id === parseInt(selectedRegion));
+    populateSelect(provinceSelect, provinces, 'province_id', 'province_name', 'Select Province');
+    populateSelect(municipalitySelect, [], 'municipality_id', 'municipality_name', 'Select Municipality');
+    populateSelect(barangaySelect, [], 'barangay_id', 'barangay_name', 'Select Barangay');
   });
+
+  provinceSelect.addEventListener('change', (event) => {
+    const selectedProvince = event.target.value;
+    const municipalities = municipalityData.filter(municipality => municipality.province_id === parseInt(selectedProvince));
+    populateSelect(municipalitySelect, municipalities, 'municipality_id', 'municipality_name', 'Select Municipality');
+    populateSelect(barangaySelect, [], 'barangay_id', 'barangay_name', 'Select Barangay');
+  });
+
+  municipalitySelect.addEventListener('change', (event) => {
+    const selectedMunicipality = event.target.value;
+    const barangays = barangayData.filter(barangay => barangay.municipality_id === parseInt(selectedMunicipality));
+    populateSelect(barangaySelect, barangays, 'barangay_id', 'barangay_name', 'Select Barangay');
+  });
+});
   
