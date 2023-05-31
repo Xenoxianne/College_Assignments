@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Denise Julianne Gozum">
+
+        <title>Java Haven</title>
+
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header id = "home">
+            <div class = "circle"></div>
+            <nav class = ''>
+                <a href = "#"><img src = "images/Logo.png" class = "logo"></a>
+                    <ul>
+                        <li><a href = "#home" class = "active">Home</a></li>
+                        <li><a href = "#menu">Menu</a></li>
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#jobs">Jobs</a></li>
+                        <li><a href = "#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Home Page -->
+            <article class = "home" id = "home">
+                <div class = "motto">
+                    <h2>Indulge in the Finest Brews,<br/>Discover <span>Java Haven</span></h2>
+                    <p>Welcome to Java Haven, nestled in the heart of Angono, Rizal. Step into our 
+                        inviting sanctuary, where coffee aficionados find solace in the perfect blend 
+                        of flavors and ambiance. With expertly crafted brews and a cozy atmosphere, 
+                        Java Haven is the ultimate destination for those seeking a delightful coffee 
+                        experience.</p>
+                    <a href = "#menu">See Menu</a>
+                </div>
+                <div class = "imgBox">
+                    <img src = "images/Header/coffee 1.png" class = "drinks">
+                </div>
+            </article>
+
+            <ul class = "thumb">
+                <li><img src = "images/Header/coffee 1.png" onclick = "imgSlider('images/Header/coffee 1.png');changeCircleColor('#a01a7d')"></li>
+                <li><img src = "images/Header/coffee 2.png" onclick = "imgSlider('images/Header/coffee 2.png');changeCircleColor('#026c7c')"></li>
+                <li><img src = "images/Header/coffee 3.png" onclick = "imgSlider('images/Header/coffee 3.png');changeCircleColor('#f42272')"></li>
+            </ul>
+
+            <ul class = "socials">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src = "images/Socmed/facebook.png"></a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank"><img src = "images/Socmed/tiktok.png"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src = "images/Socmed/instagram.png"></a></li>
+            </ul>
+        </header>
+
+        <!-- Menu Page -->
+        <article class = "menu" id = "menu">
+
+            <h4>Java Haven</h4>
+            <h1>Our Menu</h1>
+
+            <div class = "content">
+                <div class = "catalogue">
+                    <button class = "menu-button">Ice Blended Coffee</button>
+                    <button class = "menu-button">Ice Blended Non-Coffee</button>
+                    <button class = "menu-button">Pastas</button>
+                    <button class = "menu-button">Pastries</button>
+                    <button class = "menu-button">Snacks</button>
+                </div>
+                
+                <div class = "products">
+                    <!-- Coffee -->
+                    <div class = "food active" id = "Menu1">
+                        <div class = "box">
+                            <img src = "images/Menu/Coffee/Caramel Coffee.png">
+                            <h3>Caramel</h3>
+                            <h5>₱155</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Coffee/Java Chip Coffee.png">
+                            <h3>Java Chip</h3>
+                            <h5>₱185</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Coffee/Mocha Coffee.png">
+                            <h3>Mocha</h3>
+                            <h5>₱165</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Coffee/White Mocha Coffee.png">
+                            <h3>White Mocha</h3>
+                            <h5>₱165</h5>
+                        </div>
+                    </div>
+
+                    <!-- Non-Coffee -->
+                    <div class = "food" id = "Menu2">
+                        <div class = "box">
+                            <img src = "images/Menu/Non-Coffee/Caramel Non-Coffee.png">
+                            <h3>Caramel Cream</h3>
+                            <h5>₱145</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Non-Coffee/Chocolate Chip Cream Non-Coffee.png">
+                            <h3>Choco Chip Cream</h3>
+                            <h5>₱145</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Non-Coffee/Chocolate Cream Non-Coffee.png">
+                            <h3>Chocolate Cream</h3>
+                            <h5>₱145</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Non-Coffee/Cookies n Cream Non-Coffee.png">
+                            <h3>Cookies N' Cream</h3>
+                            <h5>₱145</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Non-Coffee/Matcha Cream Non-Coffee.png">
+                            <h3>Matcha Cream</h3>
+                            <h5>₱165</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Non-Coffee/Strawberries and Cream Non-Coffee.png">
+                            <h3>Strawberry Cream</h3>
+                            <h5>₱155</h5>
+                        </div> 
+                    </div>
+
+                    <!-- Pasta -->
+                    <div class = "food" id = "Menu3">
+                        <div class = "box">
+                            <img src = "images/Menu/Pasta/carbonara.png">
+                            <h3>Carbonara</h3>
+                            <h5>₱269</h5>
+                        </div> 
+                        <div class = "box">
+                            <img src = "images/Menu/Pasta/Pesto chicken.png">
+                            <h3>Pesto Chicken</h3>
+                            <h5>₱275</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Pasta/bolognese.png">
+                            <h3>Bolognese</h3>
+                            <h5>₱295</h5>
+                        </div> 
+                    </div>
+
+                    <!-- Pastries -->
+                    <div class = "food" id = "Menu4">
+                        <div class = "box">
+                            <img src = "images/Menu/Pastries/Cake.png">
+                            <h3>Cake</h3>
+                            <h5>₱129</h5>
+                        </div> 
+                        <div class = "box">
+                            <img src = "images/Menu/Pastries/Cookie.png">
+                            <h3>Choco Chip Cookies</h3>
+                            <h5>₱65</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Pastries/Muffin.png ">
+                            <h3>Muffin</h3>
+                            <h5>₱50</h5>
+                        </div> 
+                    </div>
+
+                    <!-- Snacks -->
+                    <div class = "food" id = "Menu5">
+                        <div class = "box">
+                            <img src = "images/Menu/Snacks/fries.png">
+                            <h3>Patatas Bravas</h3>
+                            <h5>₱65</h5>
+                        </div>
+                        <div class = "box">
+                            <img src = "images/Menu/Snacks/sandwich.png ">
+                            <h3>Clubhouse Sandwich</h3>
+                            <h5>₱195</h5>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- About Page -->
+        <article class = "about" id = "about">
+
+            <h4>Java Haven</h4>
+            <h1>About Us</h1>
+
+            <div class = "content">
+                <img src = "images/Coffee.jpg">
+
+                <div class = "description">
+                    <p><b>Where:</b> B3 L3 Eastridge Village, Bgy San Roque, Angono, Rizal <br/>
+                        <b>Store Hours:</b> 1pm - 9pm (Tuesday to Sunday)<br/><br/>
+                        Welcome to our cozy café, where delicious aromas and warm ambiance await you. 
+                        At our café, we take pride in serving freshly brewed coffees, tantalizing teas, 
+                        and delightful pastries that will satisfy your cravings and awaken your taste buds. 
+                        Our dedicated team of baristas crafts each cup with care, ensuring every sip is a 
+                        moment of pure bliss. Whether you're seeking a serene spot to work, catch up with 
+                        friends, or simply indulge in a moment of solitude, our café provides the perfect 
+                        retreat. Join us and experience a haven of flavors, friendly smiles, and a place 
+                        where time slows down, allowing you to savor life's simple pleasures.</p>
+
+                    <audio id = "myAudio"  controls loop>
+                        <source src="images/bg.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </article>
+
+        <!-- Jobs Page -->
+        <article class = "jobs" id = "jobs">
+
+            <h4>Java Haven</h4>
+            <h1>Career Opportunities</h1>
+
+            <div class = "content" onclick = "openWebsite()">
+                <div class = "box">
+                    <img src = "images/jobs/manager.png">
+                    <h3>Manager</h3>
+                    <button>Apply Now</button>
+                </div>
+                <div class = "box" onclick = "openWebsite()">
+                    <img src = "images/jobs/barista.png">
+                    <h3>Barista</h3>
+                    <button>Apply Now</button>
+                </div>
+                <div class = "box" onclick = "openWebsite()">
+                    <img src = "images/jobs/chef.png">
+                    <h3>Chef</h3>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+        
+        </article>
+
+        <!-- Contacts Page -->
+        <article class = "contacts" id = "contacts">
+            <h4>Java Haven</h4>
+            <h1>Get in Touch</h1>
+
+            <div class = "content">
+
+                <!-- Form -->
+                <div class = "contact form">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class = "formBox">
+                            <div class = "row50">
+                                <div class = "inputBox">
+                                    <span>First Name</span>
+                                    <input type = "text" placeholder = "John">
+                                </div>
+                                <div class = "inputBox">
+                                    <span>Last Name</span>
+                                    <input type = "text" placeholder = "Doe">
+                                </div>
+                            </div>
+
+                            <div class = "row50">
+                                <div class = "inputBox">
+                                    <span>Email</span>
+                                    <input type = "text" placeholder = "JohnDoe@gmail.com">
+                                </div>
+                                <div class = "inputBox">
+                                    <span>Mobile</span>
+                                    <input type = "text" placeholder = "0949 875 3361">
+                                </div>
+                            </div>
+
+                            <div class = "row100">
+                                <div class = "inputBox">
+                                    <span>Message</span>
+                                    <textarea placeholder = "Write your message here ..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class = "row100">
+                                <div class = "inputBox">
+                                    <input type = "submit" value = "Send">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                 <!-- Info -->
+                <div class = "contact info">
+                    <h3>Contact Info</h3>
+
+                    <div class = "infoBox">
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>B3 L3 Eastridge Village, Bgy San Roque, Angono, Rizal</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href = "mailto:JavaHaven@gmail.com">JavaHaven@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href = "tel:+639499545923">+63 949 954 5923</a>
+                        </div>
+                        <ul class = "social">
+                            <li><a href = "https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href = "https://www.tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                            <li><a href = "https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "contact map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!
+                    1d3384.89030495587!2d121.17453484665029!3d14.527915698160415!2m3!
+                    1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sB3%20L3%20Eastridge%20
+                    Village%2C%20Bgy%20San%20Roque%2C%20Angono%2C%20Rizal!5e0!3m2!1sen!
+                    2sph!4v1685505484665!5m2!1sen!2sph" width="600" height="450" 
+                    style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed By: Denise Julianne Gozum</p>
+            <p>Copyright © 2023 Java Haven</p>
+        </footer>
+        
+        <script src = "script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop ( ) ) {
+                    $('nav').addClass('white');
+                }else{
+                    $('nav').removeClass('white');
+                }
+            });
+        </script>
+
+    </body>
+
+</html>
