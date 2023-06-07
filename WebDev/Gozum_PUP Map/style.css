@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    background: rgb(128,0,0);
+    background: linear-gradient(180deg, rgba(128,0,0,0.5131302521008403) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 100%);
+    overflow: hidden;
+    padding: 20px 20px 20px 50px;
+}
+
+.Column{
+    float: left;
+}
+
+.Logo img {
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.Title {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.School:hover {
+    text-decoration: underline;
+}
+
+.School {
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+    color: #800;
+}
+
+.Slogan{
+    font-family: Cinzel, serif;
+    font-size: smaller;
+    color: #555 
+}
+
+/* Main */
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 1px rgb(196, 190, 190);
+    border: #645e5e58 3px solid;
+}
+
+#map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 100%;
+    position: relative;
+}
+
+#tooltip {
+    --mouseX: 0px;
+    --mouseY: 0px;
+    position: absolute;
+    display: none;
+    left: calc(var(--mouseX) + 3rem);
+    top: calc(var(--mouseY) + 5rem);
+    transform: translateY(-100%);
+    background-color: white;
+    padding: 1rem;
+    max-width: 32vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 1px rgb(196, 190, 190);
+    border: rgba(0, 0, 0, 0.571) 3px solid;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+#tooltip > #image {
+    max-height: 25vh;
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+#tooltip > #name {
+    font-weight: bold;
+    font-size: large;
+}
+
+#tooltip > #description {
+    font-size: 12px;
+}
+
+map[name="pup-map"] > area {
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+footer p{
+    line-height: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 9pt;
+    font-weight: 300;
+    color: gray;
+}
+    
