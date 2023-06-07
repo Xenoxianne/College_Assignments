@@ -222,7 +222,6 @@ const coords = [
 
   {
     id: "Public Restroom",
-    imagePath: "./Images/29.jpg",
     title: "Public Restroom",
     description:
       "On the PUP campus, a facility with restrooms, basins, and other amenities that is open to the public.",
