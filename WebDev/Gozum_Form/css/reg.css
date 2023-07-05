@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #028090;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+
+body {
+    display: flex;
+}
+
+.contents {
+    display: flex;
+    margin: 50px 100px 50px 100px;
+    width: 100%;
+    min-height: 80vh;
+    background-color: white;
+    align-items: center;
+    place-self: center;
+    border-radius: 20px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 50px 1px rgb(196, 190, 190);
+}
+
+/* left box */
+
+.left-box {
+    background-color: var(--primary-color);
+    flex: 0 0 30%;
+    height: 80vh;
+    padding: 20px 20px 30px 40px;
+    color: white;
+}
+
+.left-box h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: -3px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.left-box h2 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.left-box p {
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+/* progress bar */
+
+.progress-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 50px;
+    counter-reset: step;
+}
+
+.progress-bar::before, .progress {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #dcdcdc58;
+    margin-left: 20px;
+}
+
+.progress {
+    background-color: white;
+    height: 0%;
+    transition: 0.3s;
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    left: 8vh;
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.progress-step {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: #dcdcdc58 3px solid;
+    color: #dcdcdc58;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step-active {
+    font-weight: bold;
+    border-color: #dcdcdc;
+    color: white;
+}
+
+/* right box */
+
+.right-box {
+    flex: 1;
+    height: 80vh;
+    padding: 20px 20px 30px 40px;
+}
+
+.right-box .intro{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.right-box .intro p {
+    font-size: 15px;
+    font-family: "Tahoma", sans-serif;
+    opacity: 0.5;
+    padding: 10px 10px 0 10px;
+}
+
+.right-box p, ul li{
+    font-size: 15px;
+    font-family: "Tahoma", sans-serif;
+    padding-top: 15px;
+}
+
+ul li {
+    margin-left: 5vh;
+}
+
+.input-group input.selected {
+    color: black;
+}
+
+input[type = "text"], input[type = "password"],
+select, option, fieldset, textarea {
+    width: 45vh;
+    font-size: 18px;
+    padding: 10px 10px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+label.label {
+    position: absolute;
+    letter-spacing: -1px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: -365px;
+    color: rgba(128, 128, 128, 0.645);
+    transition: 0.2s ease;
+    pointer-events: none;
+}
+
+label.first{
+    margin-left: -380px;
+}
+
+.input-group input:focus + .label,
+.input-group input:valid + .label {
+    height: 30px;
+    transform: translate(-10px, -30px) scale(0.80);
+    background-color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    color: black
+}
+
+select {
+    width: 48.5vh;
+    padding-left: 6px;
+}
+
+option {
+    color: black;
+}
+
+.birthday {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.birthday select {
+    width: 25vh;
+}
+
+/* For Radio Buttons */
+.right-box p.radio-grp, legend {
+    font-size: 18px;
+    opacity: 1;
+    margin-top: -15px;
+}
+
+.radio-lbl {
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+input[type = "radio"], input[type = "checkbox"] {
+    margin-left: 30px;
+}
+
+.radio-adjust, .checkbox {
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.req-checkbox {
+    font-size: 15px;
+    font-family: "Tahoma", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Submit */
+
+.end {
+    margin-top: 10vh;
+}
+
+.end h1 {
+    line-height: 50px;
+    letter-spacing: -1px;
+    padding: 10px;
+}
+
+.end p {
+    margin-top: 30px;
+    line-height: 30px;
+    opacity: 1;
+    padding: 10px;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 150px;
+    color: #f3f3f3;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 0.7rem;
+    float: right;
+}
+
+.btn-clear {
+    float: left;
+    background-color: #8f2d56;
+}
+
+.btn-submit {
+    background-color: #8f2d56;
+}
+
+.btn:hover {
+    background-color: #004346;
+    box-shadow: 0px 0px 0px 1px #8f2d56;
+}
+
+.btn-clear:hover, .btn-submit {
+    background-color: #712042;
+}
+
+/* for changing of forms */
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 1s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(20px);
+        transition: all 2s ease;
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* login */
+
+#register {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#register:hover {
+    text-decoration: underline;
+}
+
+/* to home */
+.toHome {
+    text-decoration: none;
+    color: white;
+}
