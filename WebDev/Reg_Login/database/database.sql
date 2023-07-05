@@ -1,0 +1,22 @@
+CREATE TABLE registration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    gender VARCHAR(64),
+    number VARCHAR(11),
+    email VARCHAR(255),
+    birthday VARCHAR(64),
+    address VARCHAR(255),
+    street VARCHAR(255),
+    subd VARCHAR(255),
+    region VARCHAR(255),
+    province VARCHAR(255),
+    municipality VARCHAR(255),
+    barangay VARCHAR(255),
+    zip VARCHAR(10),
+    membership ENUM('Standard', 'Premium', 'Ultimate'),
+    prefContact ENUM('Phone', 'Email', 'Any'),
+    recom VARCHAR(255),
+    password VARCHAR(255),
+    memRules TINYINT(1),
+    memPrivacy TINYINT(1)
+);

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #028090;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    width: 35%;
+    min-height: 65vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 50px 1px rgb(196, 190, 190);
+}
+
+/* Header */
+
+.intro {
+    margin: 5vh;
+}
+
+.intro h2 {
+    letter-spacing: -3px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.intro h1 {
+    margin-top: 15px;
+}
+
+/* Text box */
+
+.input-group input.selected {
+    color: black;
+}
+
+input[type = "text"], input[type = "password"] {
+    width: 50vh;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-group input:focus + .label,
+.input-group input:valid + .label {
+    transform: translate(-15px, -30px) scale(0.80);
+    background-color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    color: black
+}
+
+label.label {
+    position: absolute;
+    letter-spacing: -1px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: -50vh;
+    color: rgba(128, 128, 128, 0.645);
+    transition: 0.2s ease;
+    pointer-events: none;
+}
+
+/* button */
+
+.btn {
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 53vh;
+    color: #f3f3f3;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    float: right;
+}
+
+.btn:hover {
+    background-color: #026a78;
+}
+
+/* error */
+.error {
+    background-color: #F2DEDE; 
+    color: #A94442;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 50vh;
+    margin-bottom: 20px;;
+}
+
+/* register */
+
+.register {
+    letter-spacing: -0.5px;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+
+.register a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
